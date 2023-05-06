@@ -1,0 +1,214 @@
+/**Começo do boot**/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans";
+}
+.center{
+	max-width: 1280px;
+	padding:  0 2%;
+	margin: 0 auto;
+}
+.w50{
+	width: 50%;
+	padding: 0 2%;
+}
+.clear{
+	clear: both;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.w33{
+	width: 33.3%;
+}
+/**fim do boot**/
+header{
+	background: #3D437A;
+	padding: 10px 0;
+}
+.mobile{
+	display: none;
+}
+nav.desktop ul{
+	list-style-type: none;
+	position: relative;
+	top: 6px;
+}
+nav.desktop li{
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 15px;
+	padding: 0 15px;
+}
+nav.desktop a{
+	color: white;
+	text-decoration: none;
+}
+header .logo{
+	color: white;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+.banner-principal{
+	width: 100%;
+	height: 600px;
+	background-image: url('dbname.jpg');
+	background-size: cover;
+	position: relative;
+}
+.overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+section.banner-principal form{
+	max-width: 600px;
+	width: 98%;
+	z-index: 2;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+section.banner-principal form h2{
+	color: white;
+	font-weight: 300;
+	font-size: 30px;
+	text-align: center;
+}
+section.banner-principal form input[type="email"]{
+	width: 100%;
+	height: 66px;
+	background: white;
+	color: #333;
+	font-size: 22px;
+	padding-left: 10px;
+	margin-top: 10px;
+}
+section.banner-principal form input[type="submit"]{
+	width: 100%;
+	height: 66px;
+	background: #00C59E;
+	color: white;
+	cursor: pointer;
+	font-size: 22px;
+	margin-top: 10px;
+	border: 0;
+}
+section.descricao-autor{
+	padding: 30px 0;
+
+}
+section.descricao-autor h2{
+	font-size: 25px;
+	font-weight: 400;
+}
+section.descricao-autor p{
+	font-size: 16px;
+	color: #444;
+	margin-top: 10px;
+}
+.box-especialidades {
+   background-color: #E2E2E2;
+   padding: 40px 0;
+}
+section.especialidades h2.title{
+	font-size: 30px;
+	font-weight: 400;
+	color: #999;
+	text-align: center;
+}
+.box-especialidades{
+	margin: 20px 0;
+}
+.box-especialidades h3{
+	text-align: center;
+}
+footer{
+	padding: 30px 0;
+	background: #313462;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+}
+.contato-container{
+	text-align: center;
+}
+.contato-container input{
+	width: 100%;
+	height: 40px;
+	padding-left: 8px;
+	font-size: 16px;
+	color: #444;
+	margin: 20px 0;
+}
+.contato-container input[type="submit"]{
+	width: 50%;
+	background-color: orange;
+	border: 1px solid gray;
+	box-shadow: 5px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 700px){
+	nav.desktop{
+		display: none;
+	}
+	nav.mobile{
+		display: block;
+	}
+	.botao-menu-mobile{
+		font-size: 24px;
+		cursor: pointer;
+		color: white;
+	}
+	nav.mobile ul{
+		display: none;
+		top: 55px;
+		z-index: 3;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+	nav.mobile li{
+		width: 100%;
+		display: block;
+		background: white;
+		border-bottom: 1px solid #ccc;
+		font-size: 15px;
+		padding: 6px;
+	}
+	nav.mobile li a{
+		color: #444;
+		text-decoration: none;
+	}
+}
+@media screen and (max-width: 768px){
+	.w50{
+		width: 100%;
+		padding: 20px;
+	}
+	img{
+		display: block;
+		margin: 0 auto;
+		max-width: 500px;
+		float: none !important;
+	}
+	.w33{
+		width: 100%;
+		padding: 20px;
+		display: block;
+	}
+}
